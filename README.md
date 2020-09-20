@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a little program that solves a sudoku puzzle using the **backtracking** algorithm. For now it solves only a preconfigures partially filled sudoku board:
+This is a little program that solves a sudoku puzzle using the [**backtracking**](https://en.wikipedia.org/wiki/Backtracking) algorithm. For now it solves only a preconfigures partially filled sudoku board:
 ```
 board = [[3, 0, 6, 5, 0, 8, 4, 0, 0],
         [5, 2, 0, 0, 0, 0, 0, 0, 0],
