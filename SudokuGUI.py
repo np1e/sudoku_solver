@@ -155,18 +155,13 @@ class SudokuSolverGUI(Frame):
         self.messageBox.pack_forget()    
 
     def solve(self): 
-        self.disable_buttons()
         self.grid.disable(True)
         self.solver.board = self.board
         t = threading.Thread(target=self.solver.solve)
         t.start()
 
-    def disable_buttons(self):
-        for child in self.buttons.winfo_children():
-            child['state'] = 'disabled'
     
     def check(self):
-        self.disable_buttons()
         self.grid.disable(True)
         self.update_model()
         if self.solver.check_board():
